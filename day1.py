@@ -19,12 +19,12 @@ print(height)
 #print("hello " + name)
 
 #type conversion.
-#birthYear = int(input("Which year were you born?\n"))
-#age = 2023 - birthYear
-#print(age)
-#first = int(input("first:"))
-#second = float(input("second:"))
-#print("Sum: "+ str(first+second))
+birthYear = int(input("Which year were you born?\n"))
+age = 2023 - birthYear
+print(age)
+first = int(input("first:"))
+second = float(input("second:"))
+print("Sum: "+ str(first+second))
 
 #conditionals
 temp = 37
@@ -83,3 +83,40 @@ for numbe in numb:
 
 num1 = (1,2,3,4,2,2,)
 print(num1.count(2))
+
+
+#dictionaries
+#allow us to work with key value pairs
+student = {'name':'Martha', 'age':30,'location':'Mbarara','hobbies':['eating','sleeping']}
+print(student)
+print(student['name'])
+print(student['hobbies'])
+print(student.get('class'))#we use .get function inorder not to get the error message if we accessed a none existent key
+del student['age']
+print(student)
+student.update({'name':'Keith','location':'Kampala','hobbies':['ball','code']})
+print(len(student))
+print(student.values())
+print(student.items())
+
+#looping through dicts
+for key, values in student.items():
+    print(key, values)
+
+
+#sets
+#a collection of data with no duplicates.
+num2 = [1,2,3,3,4,3,3]
+#to convert it to a set
+first = set(num2)
+second = {6,7,3,1}
+print(first | second)#for union sets
+print(first & second)#for intersection
+print(first - second)#for first only
+print(first ^ second)# elements in either ets but not both
+#we dont access items by index in a set because its unordered
+if 9 in first
+    print("yes")
+else:
+    print("no")
+
