@@ -115,7 +115,7 @@ print(first & second)#for intersection
 print(first - second)#for first only
 print(first ^ second)# elements in either ets but not both
 #we dont access items by index in a set because its unordered
-if 9 in first
+if 9 in first:
     print("yes")
 else:
     print("no")
