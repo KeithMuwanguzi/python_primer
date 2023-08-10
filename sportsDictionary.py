@@ -1,0 +1,16 @@
+dictionary = {'air ball':'The ball misses the hoop and backboard entirely',
+'assist':'a pass that sets up a score',
+'ball fake':'to fake a pass or short',
+'basket':'scoring goal attached to the backboard and is comprised of a metal rim from which a coded net hungs',
+'blocking':'use your body to block the opponent',
+'centre':'in position near the bsaket to capture rebounds and block shots',
+'chest pass':'chest to chest pass with both hands',
+'conversion':'a dunked free throw',
+'cross over':'front of the body dribble fom one hand to the other',
+'dribble':'bouncing the ball off the flour with one hand',
+'dunk':'slamming the ball into th basket',
+'hoop':'another word for basket',
+'lay up':'advancing close to the basketin an effort to bank a shot off the backboard',
+'offense':'the team in possession of the ball',
+'pass':'a play from one teammate to another'
+}
