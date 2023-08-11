@@ -18,3 +18,14 @@ if female==fstudent:
     print("Student details are: ", fstudent)
 else:
      print("Student details are: " ,mstudent)
+
+
+#example 2
+item1 ={'shop':'bread','price':5000} 
+item2 ={'shop':'milk','price':2000} 
+item3 ={'shop':'butter','price':6000} 
+item4 ={'shop':'eggs','price':15000}   
+shopping_list=[item1,item2,item3,item4]
+for i in shopping_list:
+    buy =i.get('shop',)
+    print(buy) 
