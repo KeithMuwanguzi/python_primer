@@ -29,3 +29,24 @@ shopping_list=[item1,item2,item3,item4]
 for i in shopping_list:
     buy =i.get('shop',)
     print(buy) 
+
+
+#example 3
+school_shopping ={}
+school_items= True
+while school_items:
+    items =input("\nplease enter item name: ")
+    prices=input("please enter item price: ")  
+
+    school_shopping[items]=prices
+    other =input("\n would you like to specify the quantity: ") 
+    if other=='no':
+        school_items = False 
+    elif other== 'yes':
+        more = input("Add quantity")
+
+
+print("\n--------school shopping list----------") 
+for items,prices in school_shopping.items():
+    print(items , ": ", prices)      
+
