@@ -41,12 +41,19 @@ while school_items:
     school_shopping[items]=prices
     other =input("\n would you like to specify the quantity: ") 
     if other=='no':
-        school_items = False 
+        school_items = False
+        print("\n--------school shopping list----------") 
+        for items,prices in school_shopping.items():
+            print( items , ": ", prices)       
     elif other== 'yes':
-        more = input("Add quantity")
+        more = input("Add quantity: ")
+        
+        print("\n--------school shopping list----------")
+        print(more, items, ":",prices)
 
 
-print("\n--------school shopping list----------") 
-for items,prices in school_shopping.items():
-    print(items , ": ", prices)      
+
+# print("\n--------school shopping list----------") 
+# for items,prices in school_shopping.items():
+#     print( items , ": ", prices)      
 
