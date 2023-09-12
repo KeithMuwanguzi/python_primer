@@ -8,8 +8,12 @@ def create_destination(path):
     if not os.path.exists(path):
         os.mkdir(path)
 
-def copy_contents(source,dest):
+def delete_dir(path):
+    os.rmdir(path)
+
+def move_contents(source,dest):
     shutil.move(source,dest)
+
 
 def find_file_paths(source):
     file_paths = []
@@ -29,7 +33,8 @@ def main(source, target):
     paths = find_file_paths(source_path)
     create_destination(target_path)
     for path in paths:
-        copy_contents(path,target_path)
+        move_contents(path,target_path)
+    delete_dir(source_path)
 
 
 if __name__ == '__main__':
